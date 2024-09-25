@@ -21,7 +21,7 @@ class RPG_WARRIOR_API UWarriorHeroAnimInstance : public UWarriorCharacterAnimIns
 public:
 
 	virtual void NativeInitializeAnimation() override;
-	virtual void NativeThreadSafeUpdateAnimation(float DeltaSeconds);
+	virtual void NativeThreadSafeUpdateAnimation(float DeltaSeconds)override;
 
 
 protected:

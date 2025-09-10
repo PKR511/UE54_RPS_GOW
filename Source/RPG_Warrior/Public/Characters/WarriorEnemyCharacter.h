@@ -22,6 +22,10 @@ public:
 
 	AWarriorEnemyCharacter();
 
+	//~ Begin PawnCombatInterface Interface.
+	virtual UPawnCombatComponent* GetPawnCombatComponent() const override;
+	//~ End PawnCombatInterface Interface
+
 	FORCEINLINE UEnemyCombatComponent* GetEnemyCombatComponent() const { return EnemyCombatComponent; }
 
 protected:

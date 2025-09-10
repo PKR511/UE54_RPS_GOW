@@ -31,6 +31,10 @@ class RPG_WARRIOR_API AWarriorHeroCharacter : public AWarriorBaseCharacter
 public:
 	AWarriorHeroCharacter();
 
+	//~ Begin PawnCombatInterface Interface.
+	virtual UPawnCombatComponent* GetPawnCombatComponent() const override;
+	//~ End PawnCombatInterface Interface
+
 protected:
 
 	virtual void BeginPlay() override;

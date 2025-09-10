@@ -46,6 +46,13 @@ AWarriorHeroCharacter::AWarriorHeroCharacter()
 
 }//AWarriorHeroCharacter.
 
+
+UPawnCombatComponent* AWarriorHeroCharacter::GetPawnCombatComponent() const
+{
+	return HeroCombatComponent;
+}//GetPawnCombatComponent
+
+
 void AWarriorHeroCharacter::BeginPlay()
 {
 	Super::BeginPlay();
